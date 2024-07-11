@@ -1,0 +1,51 @@
+.bulb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.bulb {
+    width: 60px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 50% 50% 35% 35%;
+    position: relative;
+    box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bulb.on {
+    background-color: yellow;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5);
+}
+
+.bulb:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 0 0 10px 10px;
+}
+
+.bulb:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 0 0 10px 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
