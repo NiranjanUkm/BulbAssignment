@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Bulb from './bulb.jsx';
 
 function App() {
